@@ -9,24 +9,26 @@ Environment required:
 
 ### Install dependencies
 
-```
+```bash
 yarn
 ```
 
 ### Start
 
-```
+```bash
 yarn dev
 ```
 
 ## Production
 
-```
+```bash
 yarn build
 ```
 
 ## Deployment
 
-```
-now
+```bash
+yarn deploy
+# or
+now && now alias
 ```

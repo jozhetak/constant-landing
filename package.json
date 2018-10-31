@@ -7,8 +7,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "deploy": "now && now alias"
   },
+  "alias": "constant.money",
   "dependencies": {
     "@sindresorhus/class-names": "^0.1.0",
     "@zeit/next-sass": "^1.0.1",
