@@ -93,6 +93,7 @@ class ConstantLandingPage extends React.Component {
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@ninjadotorg" />
           <meta name="twitter:creator" content="@ninjadotorg" />
+          <link rel="stylesheet" href="https://use.typekit.net/bro5hwc.css" />
         </Head>
         <header className="landing-page-constant-header" id="landing-page-constant-header">
           <div className="container">
