@@ -85,6 +85,14 @@ class ConstantLandingPage extends React.Component {
           <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#0a2240" />
           <meta name="msapplication-TileColor" content="#0a2240" />
           <meta name="theme-color" content="#0a2240" />
+          <meta property="og:url" content="https://constant.money" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Constant: Untraceable, constant, digital cash." />
+          <meta property="og:description" content="Constant is a different kind of cryptocurrency. It is cryptographically-secured, privacy-protected digital paper money with constant purchasing power. Cryptocurrency you can actually use. Be the first to get Constant when it launches." />
+          <meta property="og:image" content="https://constant.money/static/images/preview.png" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@ninjadotorg" />
+          <meta name="twitter:creator" content="@ninjadotorg" />
         </Head>
         <header className="landing-page-constant-header" id="landing-page-constant-header">
           <div className="container">
