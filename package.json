@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "now && now alias"
+    "deploy": "now --public && now alias && now rm constant-website --safe --yes"
   },
   "dependencies": {
     "@sindresorhus/class-names": "^0.1.0",
