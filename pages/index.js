@@ -13,6 +13,8 @@ import '../styles/import/home.scss';
 import logoNinja from '../assets/logo-ninja-constant.svg.raw';
 import humburgerIcon from '../assets/hamburger.svg.raw';
 
+// import '../scripts/landing-effect';
+
 class ConstantLandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -69,6 +71,11 @@ class ConstantLandingPage extends React.Component {
     this.detectScrolledToBottom();
   }
 
+  isMobile = () => {
+    const ele = document.getElementById('is-mobile');
+    return ele && window.getComputedStyle(ele).getPropertyValue('display') === 'block';
+  }
+
   handleSubmit = (values, setSubmitting) => {
     const name = 'constant';
     const { email: emailSub } = values;
@@ -116,6 +123,7 @@ class ConstantLandingPage extends React.Component {
 
     return (
       <main className="landing-page-constant">
+        <div id="is-mobile" />
         <Head>
           <title>Constant: Untraceable, constant, digital cash.</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -190,7 +198,7 @@ class ConstantLandingPage extends React.Component {
             </div>
           </div>
         </header>
-        <section className="landing-page-constant-block block-1">
+        <section className="landing-page-constant-block cd-section block-1">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7 col-lg-6 col-xl-5 project-detail">
@@ -286,7 +294,7 @@ class ConstantLandingPage extends React.Component {
             </div>
           </div>
         </section>
-        <section className="landing-page-constant-block block-2">
+        <section className="landing-page-constant-block cd-section block-2">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7 col-lg-6 col-xl-5">
@@ -301,7 +309,7 @@ class ConstantLandingPage extends React.Component {
             </div>
           </div>
         </section>
-        <section className="landing-page-constant-block block-3">
+        <section className="landing-page-constant-block cd-section block-3">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7 col-lg-6 col-xl-5">
@@ -316,7 +324,7 @@ class ConstantLandingPage extends React.Component {
             </div>
           </div>
         </section>
-        <section className="landing-page-constant-block block-4">
+        <section className="landing-page-constant-block cd-section block-4">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7 col-lg-6 col-xl-5">
@@ -332,7 +340,7 @@ class ConstantLandingPage extends React.Component {
             </div>
           </div>
         </section>
-        <section className="landing-page-constant-block block-5" id="landing-page-constant-block-5">
+        <section className="landing-page-constant-block cd-section block-5" id="landing-page-constant-block-5">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-7 col-lg-6 col-xl-5">
@@ -355,6 +363,10 @@ class ConstantLandingPage extends React.Component {
             </div>
           </div>
         </section>
+        <ul className="cd-vertical-nav">
+          <li><a href="#0" className="cd-prev">Next</a></li>
+          <li><a href="#0" className="cd-next">Prev</a></li>
+        </ul>
       </main>
     );
   }

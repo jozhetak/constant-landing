@@ -5,3 +5,10 @@ body {
 .text-success {
   color: #2dce89;
 }
+
+#is-mobile {
+  display: none;
+  @include breakpoint-max('md') {
+    display: block;
+  }
+}
