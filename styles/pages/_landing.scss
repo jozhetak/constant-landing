@@ -147,19 +147,41 @@
     position: relative;
     line-height: 24px;
     font-size: 15px;
+    &.visible {
+      > div {
+        visibility: visible;
+      }
+    }
+    > div {
+      height: 100%;
+      box-shadow: 0 0 0 rgba(25, 30, 46, 0.4);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: translateZ(0);
+      visibility: hidden;
+      backface-visibility: hidden;
+      @include breakpoint('md') {
+        min-height: 600px;
+        padding-top: 20vh;
+        height: 100vh;
+      }
+      @include breakpoint-max('md') {
+        padding-bottom: 20px;
+        padding-top: 50px;
+        &.block-1 {
+          padding-top: 80px;
+        }
+        .img-container {
+          img {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
     img {
       max-width: 100%;
-    }
-    @include breakpoint('md') {
-      min-height: 600px;
-      padding-top: 20vh;
-      height: 100vh;
-    }
-    @include breakpoint-max('md') {
-      padding-top: 50px;
-      &.block-1 {
-        padding-top: 80px;
-      }
     }
     &.block-1 {
       .landing-page-constant-heading {

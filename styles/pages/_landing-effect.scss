@@ -10,6 +10,9 @@
   border-radius: 15px 15px 13px 13px;
   border: 2px solid lighten(#2989ff, 15%);
   transform: translateZ(0);
+  @include breakpoint-max('lg') {
+    display: none;
+  }
   .mouse__wheel {
     position: absolute;
     left: 50%;
@@ -44,6 +47,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  @include breakpoint-max('md') {
+    display: none;
+  }
   a {
     display: block;
     height: 40px;
