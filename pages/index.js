@@ -117,9 +117,9 @@ class ConstantLandingPage extends React.Component {
     return (
       <main className="landing-page-constant">
         <Head>
-          <title>Constant: Untraceable, constant, digital cash.</title>
+          <title>Constant: untraceable, constant, digital cash.</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <meta name="description" content="Constant is a different kind of cryptocurrency. It is cryptographically-secured, privacy-protected digital paper money with constant purchasing power. Cryptocurrency you can actually use. Be the first to get Constant when it launches." />
+          <meta name="description" content="Constant is a different kind of cryptocurrency. It is cryptographically-secured, privacy-protected digital paper money; cryptocurrency you can actually use. Be the first to get Constant when it launches." />
           <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png" />
@@ -129,8 +129,8 @@ class ConstantLandingPage extends React.Component {
           <meta name="theme-color" content="#0a2240" />
           <meta property="og:url" content="https://constant.money" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Constant: Untraceable, constant, digital cash." />
-          <meta property="og:description" content="Constant is a different kind of cryptocurrency. It is cryptographically-secured, privacy-protected digital paper money with constant purchasing power. Cryptocurrency you can actually use. Be the first to get Constant when it launches." />
+          <meta property="og:title" content="Constant: untraceable, constant, digital cash." />
+          <meta property="og:description" content="Constant is a different kind of cryptocurrency. It is cryptographically-secured, privacy-protected digital paper money; cryptocurrency you can actually use. Be the first to get Constant when it launches." />
           <meta property="og:image" content="https://constant.money/static/images/preview.png" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@ninjadotorg" />
