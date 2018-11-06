@@ -10,7 +10,7 @@ import { MoonLoader } from 'react-spinners';
 
 import '../styles/import/home.scss';
 
-import logoNinja from '../assets/logo-ninja-constant.svg.raw';
+import logoC from '../assets/logo-C.svg.raw';
 import humburgerIcon from '../assets/hamburger.svg.raw';
 
 const title = 'Constant: untraceable, constant, digital cash.';
@@ -145,7 +145,7 @@ class ConstantLandingPage extends React.Component {
             <div className="row">
               <div className="col-12">
                 <div className="landing-page-constant-logo">
-                  <a href="/"><div dangerouslySetInnerHTML={{ __html: logoNinja }} /></a>
+                  <a href="/"><div dangerouslySetInnerHTML={{ __html: logoC }} /></a>
                 </div>
                 <div onClick={this.toggleShowMenu} className="landing-page-constant-hamburger" dangerouslySetInnerHTML={{ __html: humburgerIcon }} />
                 <div className={

@@ -40,7 +40,10 @@
         }
         .landing-page-constant-logo {
           svg {
-            g {
+            path {
+              fill: #fff;
+            }
+            circle {
               fill: #fff;
             }
           }
@@ -48,6 +51,9 @@
       }
     }
     .landing-page-constant-logo {
+      svg {
+        height: 60px;
+      }
       float: left;
     }
     .landing-page-constant-menu {
