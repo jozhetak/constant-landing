@@ -155,26 +155,6 @@ class ConstantLandingPage extends React.Component {
                   <ul>
                     <li>
                       <ReactGA.OutboundLink
-                        eventLabel="constant.clicked.header.ninja-product"
-                        to="https://ninja.org/product"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Product
-                    </ReactGA.OutboundLink>
-                    </li>
-                    <li>
-                      <ReactGA.OutboundLink
-                        eventLabel="constant.clicked.header.ninja-research"
-                        to="https://ninja.org/research"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Research
-                      </ReactGA.OutboundLink>
-                    </li>
-                    <li>
-                      <ReactGA.OutboundLink
                         eventLabel="constant.clicked.header.ninja-recruiting"
                         to="https://ninja.org/recruiting?project=Constant"
                         target="_blank"
