@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { Formik } from 'formik';
 import axios from 'axios';
 import ReactGA from 'react-ga';
+import Modernizr from 'modernizr';
 
 import { MoonLoader } from 'react-spinners';
 
@@ -16,6 +17,14 @@ import humburgerIcon from '../assets/hamburger.svg.raw';
 const title = 'Constant: untraceable, constant, digital cash.';
 const description = 'Constant is a different kind of cryptocurrency. It is cryptographically-secured, privacy-protected digital paper money; cryptocurrency you can actually use. Be the first to get Constant when it launches.';
 
+const listImages = [
+  '/static/images/block1.webp',
+  '/static/images/block2.webp',
+  '/static/images/block3.webp',
+  '/static/images/block4.webp',
+  '/static/images/block5.webp',
+];
+
 class ConstantLandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -23,6 +32,7 @@ class ConstantLandingPage extends React.Component {
     this.state = {
       hasSubscribed: false,
       showMenu: false,
+      listImages,
     };
   }
 
@@ -34,6 +44,20 @@ class ConstantLandingPage extends React.Component {
 
     ReactGA.initialize('UA-128480092-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
+
+    Modernizr.on('webp', (result) => {
+      if (!result) {
+        this.setState({
+          listImages: [
+            '/static/images/block1.png',
+            '/static/images/block2.png',
+            '/static/images/block3.png',
+            '/static/images/block4.png',
+            '/static/images/block5.png',
+          ],
+        })
+      }
+    });
   }
 
   componentWillUnmount() {
@@ -115,7 +139,7 @@ class ConstantLandingPage extends React.Component {
   }
 
   render() {
-    const { hasSubscribed, showMenu } = this.state;
+    const { hasSubscribed, showMenu, listImages } = this.state;
 
     return (
       <main className="landing-page-constant">
@@ -264,7 +288,7 @@ class ConstantLandingPage extends React.Component {
                 </div>
               </div>
               <div className="col-12 col-md-5 col-lg-6 col-xl-7 img-container">
-                <img src="/static/images/block1.png" alt="" />
+                <img src={listImages[0]} alt="" />
               </div>
             </div>
           </div>
@@ -279,7 +303,7 @@ class ConstantLandingPage extends React.Component {
                 <p>Constant gives you anonymity and control, and complete freedom with your money.</p>
               </div>
               <div className="col-12 col-md-5 col-lg-6 col-xl-7 img-container">
-                <img src="/static/images/block2.png" alt="" />
+                <img src={listImages[1]} alt="" />
               </div>
             </div>
           </div>
@@ -294,7 +318,7 @@ class ConstantLandingPage extends React.Component {
                 <p>Our AI scientists and economics researchers are working together to develop an adaptive, self-learning, self-adjusting, autonomous monetary policy that can weather all market conditions, keeping the value of Constant stable at all times.</p>
               </div>
               <div className="col-12 col-md-5 col-lg-6 col-xl-7 img-container">
-                <img src="/static/images/block3.png" alt="" />
+                <img src={listImages[2]} alt="" />
               </div>
             </div>
           </div>
@@ -310,7 +334,7 @@ class ConstantLandingPage extends React.Component {
                 </p>
               </div>
               <div className="col-12 col-md-5 col-lg-6 col-xl-7 img-container">
-                <img src="/static/images/block4.png" alt="" />
+                <img src={listImages[3]} alt="" />
               </div>
             </div>
           </div>
@@ -333,7 +357,7 @@ class ConstantLandingPage extends React.Component {
                 </p>
               </div>
               <div className="col-12 col-md-5 col-lg-6 col-xl-7 img-container">
-                <img src="/static/images/block5.png" alt="" />
+                <img src={listImages[4]} alt="" />
               </div>
             </div>
           </div>
