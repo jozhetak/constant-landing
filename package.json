@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "yarn build && yarn export && now ./out -n constant-website && now alias && now rm constant-website --safe --yes"
+    "now-build": "next build && next export -o dist",
+    "deploy": "now -n constant-website && now alias && now rm constant-website --safe --yes"
   },
   "dependencies": {
     "@sindresorhus/class-names": "^0.1.0",
